@@ -375,11 +375,11 @@ footer {
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
 
     /* navigation bar */
     .topnav a {
-        padding: 5px 6px;
+        padding: 8px 10px;
         margin: 5px 5px;
         font-size: 8px;
     }
