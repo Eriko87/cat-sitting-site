@@ -1,2 +1,2 @@
 # chingu-voyage-prework
- prework assignment for chingu project
+ Chingu Voyage Project: https://eriko87.github.io/cat-sitting-site/
