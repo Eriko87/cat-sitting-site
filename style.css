@@ -485,6 +485,9 @@ footer {
 
 
     /* Contact sections */
+    #contact{
+        margin-bottom: 100px;
+    }
     #contactImage h2 {
         font-size: 1.5em;
     }
