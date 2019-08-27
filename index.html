@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to PetSitting</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/v4-shims.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Sigmar+One&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="index.js"></script>
+</head>
+<header>
+    <div id="header" class="topnav">
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+    </div>
+</header>
+
+<body>
+    <section id="home">
+        <div class="homeImage">
+            <h1>Choco's Cat sitting</h1>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="scrollbox">
+            <div class="aboutContainor">
+                <h2 class="sectionName">About Us</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore
+                    magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo
+                    consequat. Duis
+                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="serviceImage">
+            <h2>Our Services</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna
+                aliqua.</p>
+        </div>
+        <div class="scrollbox">
+            <div class="serviceDiscriptionContainor">
+                <div class="serviceDiscription">
+                    <h3>House Sitting</h3>
+                    <i class="fas fa-home"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore
+                        magna
+                        aliqua.</p>
+                </div>
+                <div class="serviceDiscription">
+                    <h3>Professional</h3>
+                    <i class="fas fa-paw"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore
+                        magna
+                        aliqua.</p>
+                </div>
+                <div class="serviceDiscription">
+                    <h3>Special Care</h3>
+                    <i class="fas fa-heart"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore
+                        magna
+                        aliqua.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing">
+        <div class="pricingImage">
+            <h2>Pricing</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore
+                magna
+                aliqua.</p>
+        </div>
+        <div class="scrollbox">
+            <div class="pricingDiscriptionContainor">
+                <div class="pricingDiscription">
+                    <h3>$30 for 30 minutes visit</h3>
+                    <h4>Details</h4>
+                    <ol>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum.</li>
+                    </ol>
+                </div>
+                <div class="pricingDiscription">
+                    <h3>$50 for 1 hour visit</h3>
+                    <h4>Details</h4>
+                    <ol>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum.</li>
+                    </ol>
+                </div>
+                <div class="pricingDiscription">
+                    <h3>$200 for overnight stay</h3>
+                    <h4>Details</h4>
+                    <ol>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="hero-bg">
+        <div id="contactImage">
+            <img src="img/contact.jpg" alt="">
+            <h2>Contact</h2>
+            <div class="container">
+                <form action="action_page.php">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your email address..">
+
+                    <label for="country">Service</label>
+                    <select id="country" name="country">
+                        <option value="australia">$30 for 30 minutes visit</option>
+                        <option value="canada">$50 for 1 hour visit</option>
+                        <option value="usa">$200 for overnight stay</option>
+                        <option value="usa">Other</option>
+                    </select>
+
+                    <label for="subject">Message</label>
+                    <textarea id="subject" name="subject" placeholder="" style="height:60px"></textarea>
+
+                    <input type="submit" onclick="myFunction()" value="Submit">
+
+                </form>
+            </div>
+        </div>
+    </section>
+    <script>
+        var scrollElm = (function () {
+            if ('scrollingElement' in document) return document.scrollingElement;
+            if (navigator.userAgent.indexOf('WebKit') != -1) return document.body;
+            return document.documentElement;
+        })();
+        (function () {
+            var duration = 800;
+            var ignore = '.noscroll';
+            var easing = function (t, b, c, d) { return c * (0.5 - Math.cos(t / d * Math.PI) / 2) + b; }; //jswing
+            var smoothScrollElm = document.querySelectorAll('a[href^="#"]:not(' + ignore + ')');
+            Array.prototype.forEach.call(smoothScrollElm, function (elm) {
+                elm.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    var targetElm = document.querySelector(elm.getAttribute('href'));
+                    if (!targetElm) return;
+                    var targetPos = targetElm.getBoundingClientRect().top;
+                    var startTime = Date.now();
+                    var scrollFrom = scrollElm.scrollTop;
+                    (function loop() {
+                        var currentTime = Date.now() - startTime;
+                        if (currentTime < duration) {
+                            scrollTo(0, easing(currentTime, scrollFrom, targetPos, duration));
+                            window.requestAnimationFrame(loop);
+                        } else {
+                            scrollTo(0, targetPos + scrollFrom);
+                        }
+                    })();
+                })
+            });
+        })();
+
+        // highlight navber when scrolling
+        function onScroll(event) {
+            var sections = document.querySelectorAll('.topnav a');
+            var scrollPos = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+
+            for (var i = 0; i < sections.length; i++) {
+                var currLink = sections[i];
+                var val = currLink.getAttribute('href');
+                var refElement = document.querySelector(val);
+                if (refElement.offsetTop <= scrollPos && (refElement.offsetTop + refElement.offsetHeight > scrollPos)) {
+                    document.querySelector('.topnav a').classList.remove('active');
+                    currLink.classList.add('active');
+                } else {
+                    currLink.classList.remove('active');
+                }
+            }
+        };
+
+        window.document.addEventListener('scroll', onScroll);
+
+        function myFunction() {
+            console.log("thanks")
+            alert("Thank you!");
+        }
+    </script>
+
+</body>
+<footer>Choco's Cat Sitting</footer>
+
+</html>
