@@ -387,6 +387,7 @@ footer {
     /*home section*/
     .homeImage {
         background-position: 0px -100px;
+        object-fit: contain;
         height: 400px;
     }
 
